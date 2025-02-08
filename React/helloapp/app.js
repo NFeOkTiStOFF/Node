@@ -1,7 +1,7 @@
 const http = require("http");
 const fs = require("fs");
 
-https.createServer(function (request, response) {
+http.createServer(function (request, response) {
 
     let filePath = "index.html";
     if (request.url !== "/") {
@@ -21,5 +21,5 @@ https.createServer(function (request, response) {
     });
 
 }).listen(3001, function () {
-    console.log("Server started at 3000");
+    console.log("Server started at 3001");
 });
